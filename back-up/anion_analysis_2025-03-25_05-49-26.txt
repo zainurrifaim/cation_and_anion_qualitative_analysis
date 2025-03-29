@@ -1,0 +1,20 @@
+Qualitative Analysis Results - ANION
+==================================================
+Detected anions: Br⁻, I⁻, NO₃⁻
+
+Br⁻:
+Test Method: AgNO₃ precipitation
+Reaction: Ag⁺ + Br⁻ → AgBr↓ (pale yellow, Ksp = 5.0×10⁻¹³)
+Principle: Intermediate solubility product distinguishes from other halides
+
+I⁻:
+Test Method: AgNO₃ precipitation
+Reaction: Ag⁺ + I⁻ → AgI↓ (yellow, Ksp = 8.5×10⁻¹⁷)
+Principle: Most insoluble silver halide
+
+NO₃⁻:
+Test Method: Brown ring test
+Reaction: NO₃⁻ + 3Fe²⁺ + 4H⁺ → NO↑ + 3Fe³⁺ + 2H₂O
+Fe²⁺ + NO → [Fe(NO)]²⁺ (brown ring)
+Principle: Nitric oxide complexation with Fe²⁺ (E° = +0.96V)
+
