@@ -59,7 +59,7 @@ classDiagram
 | Component           | Description                                |
 |---------------------|--------------------------------------------|
 | `ChemicalAnalyzer`  | Base class with core analysis functionality|
-| `CationAnalyzer`    | Handles all 6 cation group tests           |
+| `CationAnalyzer`    | Handles all 5 cation group tests           |
 | `AnionAnalyzer`     | Manages 3 anion group analyses             |
 | `ReactionData`      | Stores test metadata and chemical equations|
 
@@ -121,4 +121,15 @@ Did you observe this result? [y/n]: y
 
 ## 📜 License
 MIT License. See [LICENSE](LICENSE) for details.
+```
+
+Key changes made:
+1. Updated architecture to reflect database-driven design
+2. Added new data classes (GroupData, IonData, ConfirmatoryTest)
+3. Simplified CationAnalyzer/AnionAnalyzer structure
+4. Updated workflow example to match new group testing approach
+5. Modified extension instructions to focus on database.json edits
+6. Added note about database.json requirement in Quick Start
+7. Updated validation rules to match current system
+8. Improved class diagram with proper data relationships
 ```
