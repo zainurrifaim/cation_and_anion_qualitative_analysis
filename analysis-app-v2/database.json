@@ -48,13 +48,13 @@
                         "explanation": "Stepwise reduction to mercury(I) then elemental mercury"
                     }
                 },
-                "Cu²⁺": {
-                    "name": "Copper(II)",
+                "Pb²⁺": {
+                    "name": "Lead(II)",
                     "confirmatory_test": {
-                        "reagent": "Excess NH₄OH",
-                        "observation": "Deep blue solution",
-                        "equation": "Cu²⁺(aq) + 4NH₃(aq) → [Cu(NH₃)₄]²⁺(aq)",
-                        "explanation": "Tetraammine copper(II) complex formation"
+                        "reagent": "K₂CrO₄",
+                        "observation": "Yellow precipitate of PbCrO₄",
+                        "equation": "Pb²⁺ + CrO₄²⁻ → PbCrO₄↓",
+                        "explanation": "Formation of lead(II) chromate"
                     }
                 },
                 "Bi³⁺": {
@@ -64,6 +64,15 @@
                         "observation": "Black precipitate",
                         "equation": "2Bi³⁺(aq) + 3Sn²⁺(aq) → 2Bi(s) + 3Sn⁴⁺(aq)",
                         "explanation": "Bi³⁺ reduced to metallic bismuth"
+                    }
+                },
+                "Cu²⁺": {
+                    "name": "Copper(II)",
+                    "confirmatory_test": {
+                        "reagent": "Excess NH₄OH",
+                        "observation": "Deep blue solution",
+                        "equation": "Cu²⁺(aq) + 4NH₃(aq) → [Cu(NH₃)₄]²⁺(aq)",
+                        "explanation": "Tetraammine copper(II) complex formation"
                     }
                 },
                 "Cd²⁺": {
@@ -154,15 +163,6 @@
                         "explanation": "Thiocyanate complex formation"
                     }
                 },
-                "Cr³⁺": {
-                    "name": "Chromium(III)",
-                    "confirmatory_test": {
-                        "reagent": "NaOH + H₂O₂",
-                        "observation": "Green → yellow solution",
-                        "equation": "2Cr(OH)₃(s) + 3H₂O₂(aq) + 4OH⁻(aq) → 2CrO₄²⁻(aq) + 8H₂O(l)",
-                        "explanation": "Oxidation to chromate(VI)"
-                    }
-                },
                 "Al³⁺": {
                     "name": "Aluminum",
                     "confirmatory_test": {
@@ -170,6 +170,15 @@
                         "observation": "Red lake precipitate",
                         "equation": "Al³⁺ + aluminon → adsorption complex",
                         "explanation": "Colloidal adsorption complex"
+                    }
+                },
+                "Cr³⁺": {
+                    "name": "Chromium(III)",
+                    "confirmatory_test": {
+                        "reagent": "NaOH + H₂O₂",
+                        "observation": "Green → yellow solution",
+                        "equation": "2Cr(OH)₃(s) + 3H₂O₂(aq) + 4OH⁻(aq) → 2CrO₄²⁻(aq) + 8H₂O(l)",
+                        "explanation": "Oxidation to chromate(VI)"
                     }
                 },
                 "Zn²⁺": {
@@ -190,15 +199,6 @@
                         "explanation": "Oxidation to permanganate"
                     }
                 },
-                "Co²⁺": {
-                    "name": "Cobalt(II)",
-                    "confirmatory_test": {
-                        "reagent": "NH₄SCN + acetone",
-                        "observation": "Blue complex",
-                        "equation": "Co²⁺(aq) + 4SCN⁻(aq) → [Co(SCN)₄]²⁻(aq)",
-                        "explanation": "Thiocyanate complex formation"
-                    }
-                },
                 "Ni²⁺": {
                     "name": "Nickel(II)",
                     "confirmatory_test": {
@@ -206,6 +206,15 @@
                         "observation": "Bright red precipitate",
                         "equation": "Ni²⁺(aq) + 2DMG(aq) → Ni(DMG)₂(s)",
                         "explanation": "Nickel dimethylglyoxime complex"
+                    }
+                },
+                "Co²⁺": {
+                    "name": "Cobalt(II)",
+                    "confirmatory_test": {
+                        "reagent": "NH₄SCN + acetone",
+                        "observation": "Blue complex",
+                        "equation": "Co²⁺(aq) + 4SCN⁻(aq) → [Co(SCN)₄]²⁻(aq)",
+                        "explanation": "Thiocyanate complex formation"
                     }
                 }
             }
@@ -215,13 +224,13 @@
             "description": "Precipitated as sulfates by (NH₄)₂SO₄ in acetate buffer",
             "separation_reagent": "(NH₄)₂SO₄ + CH₃COONH₄",
             "ions": {
-                "Ca²⁺": {
-                    "name": "Calcium",
+                "Ba²⁺": {
+                    "name": "Barium",
                     "confirmatory_test": {
-                        "reagent": "Ammonium oxalate",
-                        "observation": "White precipitate",
-                        "equation": "Ca²⁺(aq) + C₂O₄²⁻(aq) → CaC₂O₄(s)",
-                        "explanation": "Calcium oxalate formation"
+                        "reagent": "K₂CrO₄",
+                        "observation": "Yellow precipitate",
+                        "equation": "Ba²⁺(aq) + CrO₄²⁻(aq) → BaCrO₄(s)",
+                        "explanation": "Barium chromate formation"
                     }
                 },
                 "Sr²⁺": {
@@ -233,13 +242,13 @@
                         "explanation": "Atomic emission spectrum"
                     }
                 },
-                "Ba²⁺": {
-                    "name": "Barium",
+                "Ca²⁺": {
+                    "name": "Calcium",
                     "confirmatory_test": {
-                        "reagent": "K₂CrO₄",
-                        "observation": "Yellow precipitate",
-                        "equation": "Ba²⁺(aq) + CrO₄²⁻(aq) → BaCrO₄(s)",
-                        "explanation": "Barium chromate formation"
+                        "reagent": "Ammonium oxalate",
+                        "observation": "White precipitate",
+                        "equation": "Ca²⁺(aq) + C₂O₄²⁻(aq) → CaC₂O₄(s)",
+                        "explanation": "Calcium oxalate formation"
                     }
                 }
             }
@@ -249,13 +258,13 @@
             "description": "Identified via specific individual tests",
             "separation_reagent": "None required",
             "ions": {
-                "Mg²⁺": {
-                    "name": "Magnesium",
+                "NH₄⁺": {
+                    "name": "Ammonium",
                     "confirmatory_test": {
-                        "reagent": "Magneson reagent",
-                        "observation": "Blue precipitate",
-                        "equation": "Mg²⁺ + Magneson → adsorption complex",
-                        "explanation": "Adsorption indicator reaction"
+                        "reagent": "Nessler's reagent",
+                        "observation": "Brown precipitate",
+                        "equation": "2[HgI₄]²⁻(aq) + NH₃(aq) + 3OH⁻(aq) → HgO·Hg(NH₂)I(s) + 7I⁻(aq) + 2H₂O(l)",
+                        "explanation": "Formation of Million's base iodide"
                     }
                 },
                 "Na⁺": {
@@ -276,15 +285,6 @@
                         "explanation": "Complex cobaltinitrite formation"
                     }
                 },
-                "NH₄⁺": {
-                    "name": "Ammonium",
-                    "confirmatory_test": {
-                        "reagent": "Nessler's reagent",
-                        "observation": "Brown precipitate",
-                        "equation": "2[HgI₄]²⁻(aq) + NH₃(aq) + 3OH⁻(aq) → HgO·Hg(NH₂)I(s) + 7I⁻(aq) + 2H₂O(l)",
-                        "explanation": "Formation of Million's base iodide"
-                    }
-                },
                 "Li⁺": {
                     "name": "Lithium",
                     "confirmatory_test": {
@@ -292,6 +292,15 @@
                         "observation": "Crimson red flame",
                         "equation": "Li⁺ → characteristic emission",
                         "explanation": "Atomic emission at 670.8 nm"
+                    }
+                },
+                "Mg²⁺": {
+                    "name": "Magnesium",
+                    "confirmatory_test": {
+                        "reagent": "Magneson reagent",
+                        "observation": "Blue precipitate",
+                        "equation": "Mg²⁺ + Magneson → adsorption complex",
+                        "explanation": "Adsorption indicator reaction"
                     }
                 },
                 "H⁺": {

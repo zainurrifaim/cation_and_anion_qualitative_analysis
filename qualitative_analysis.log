@@ -1,0 +1,4 @@
+2025-05-14 15:37:40,160 - INFO - Logging system initialized
+2025-05-14 15:37:40,160 - INFO - Program started
+2025-05-14 15:37:40,160 - CRITICAL - Database file not found
+2025-05-14 15:37:40,160 - INFO - Program terminated

@@ -1,9 +1,17 @@
-2025-05-14 08:03:15,542 - INFO - Logging system initialized
-2025-05-14 08:03:15,543 - INFO - Program started
-2025-05-14 08:03:15,543 - INFO - Database loaded successfully
-2025-05-14 08:03:31,024 - INFO - Cation analyzer initialized
-2025-05-14 08:03:33,805 - INFO - Starting full cation analysis
-2025-05-14 08:03:33,806 - INFO - Testing Group I - HCl Group (Silver Group)
-2025-05-14 08:03:38,444 - INFO - Detected Pb²\u207a in Group I
-2025-05-14 08:03:38,445 - INFO - Displayed details for Pb²\u207a
-2025-05-14 08:04:00,225 - INFO - Results saved to cation_analysis_2025-05-14_08-04-00.txt
+2025-05-14 15:38:13,805 - INFO - Logging system initialized
+2025-05-14 15:38:13,806 - INFO - Program started
+2025-05-14 15:38:13,817 - INFO - Database loaded successfully
+2025-05-14 15:38:22,561 - INFO - Cation analyzer initialized
+2025-05-14 15:38:24,006 - INFO - Starting full cation analysis
+2025-05-14 15:38:24,007 - INFO - Testing Group I - HCl Group (Silver Group)
+2025-05-14 15:38:31,473 - INFO - Detected Pb²\u207a in Group I
+2025-05-14 15:38:31,476 - INFO - Displayed details for Pb²\u207a
+2025-05-14 15:38:32,065 - INFO - Detected Hg\u2082²\u207a in Group I
+2025-05-14 15:38:32,067 - INFO - Displayed details for Hg\u2082²\u207a
+2025-05-14 15:38:32,707 - INFO - Detected Ag\u207a in Group I
+2025-05-14 15:38:32,708 - INFO - Displayed details for Ag\u207a
+2025-05-14 15:38:54,993 - INFO - Testing Group II - H\u2082S Acidic Group (Copper-Arsenic Group)
+2025-05-14 15:39:10,288 - INFO - Detected Hg²\u207a in Group II
+2025-05-14 15:39:10,289 - INFO - Displayed details for Hg²\u207a
+2025-05-14 15:39:12,746 - INFO - Detected Pb²\u207a in Group II
+2025-05-14 15:39:12,747 - INFO - Displayed details for Pb²\u207a
