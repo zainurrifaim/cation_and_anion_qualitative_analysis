@@ -1,0 +1,438 @@
+{
+     "cations": {
+        "Group I": {
+            "title": "HCl Group (Silver Group)",
+            "description": "Cations forming insoluble chlorides with dilute HCl",
+            "separation_reagent": "Dilute HCl",
+            "ions": {
+                "Pb²⁺": {
+                    "name": "Lead(II)",
+                    "confirmatory_test": {
+                        "reagent": "Hot water + K₂CrO₄",
+                        "observation": "Yellow precipitate",
+                        "equation": "Pb²⁺(aq) + CrO₄²⁻(aq) → PbCrO₄(s)",
+                        "explanation": "Selective precipitation due to low solubility (Ksp = 2.8×10⁻¹³)"
+                    }
+                },
+                "Hg₂²⁺": {
+                    "name": "Mercury(I)",
+                    "confirmatory_test": {
+                        "reagent": "NH₄OH",
+                        "observation": "Black precipitate",
+                        "equation": "Hg₂Cl₂(s) + 2NH₃(aq) → Hg(l) + HgNH₂Cl(s) + NH₄⁺(aq) + Cl⁻(aq)",
+                        "explanation": "Disproportionation into metallic mercury and mercurous amidochloride"
+                    }
+                },
+                "Ag⁺": {
+                    "name": "Silver(I)",
+                    "confirmatory_test": {
+                        "reagent": "NH₃ → HNO₃",
+                        "observation": "White precipitate dissolves then reforms",
+                        "equation": "AgCl(s) + 2NH₃(aq) → [Ag(NH₃)₂]⁺(aq) + Cl⁻(aq)\n[Ag(NH₃)₂]⁺(aq) + 2H⁺(aq) → Ag⁺(aq) + 2NH₄⁺(aq)",
+                        "explanation": "Complex formation and acid-induced decomposition"
+                    }
+                }
+            }
+        },
+        "Group II": {
+            "title": "H₂S Acidic Group (Copper-Arsenic Group)",
+            "description": "Cations forming sulfide precipitates in 0.3M HCl with H₂S gas",
+            "separation_reagent": "H₂S gas (acidic medium)",
+            "ions": {
+                "Hg²⁺": {
+                    "name": "Mercury(II)",
+                    "confirmatory_test": {
+                        "reagent": "SnCl₂ solution",
+                        "observation": "White → gray precipitate",
+                        "equation": "2Hg²⁺(aq) + Sn²⁺(aq) → Hg₂²⁺(aq)\nHg₂²⁺(aq) + Sn²⁺(aq) → 2Hg(l)",
+                        "explanation": "Stepwise reduction to mercury(I) then elemental mercury"
+                    }
+                },
+                "Cu²⁺": {
+                    "name": "Copper(II)",
+                    "confirmatory_test": {
+                        "reagent": "Excess NH₄OH",
+                        "observation": "Deep blue solution",
+                        "equation": "Cu²⁺(aq) + 4NH₃(aq) → [Cu(NH₃)₄]²⁺(aq)",
+                        "explanation": "Tetraammine copper(II) complex formation"
+                    }
+                },
+                "Bi³⁺": {
+                    "name": "Bismuth(III)",
+                    "confirmatory_test": {
+                        "reagent": "SnCl₂",
+                        "observation": "Black precipitate",
+                        "equation": "2Bi³⁺(aq) + 3Sn²⁺(aq) → 2Bi(s) + 3Sn⁴⁺(aq)",
+                        "explanation": "Bi³⁺ reduced to metallic bismuth"
+                    }
+                },
+                "Cd²⁺": {
+                    "name": "Cadmium(II)",
+                    "confirmatory_test": {
+                        "reagent": "Na₂S",
+                        "observation": "Yellow precipitate",
+                        "equation": "Cd²⁺(aq) + S²⁻(aq) → CdS(s)",
+                        "explanation": "Formation of cadmium sulfide"
+                    }
+                },
+                "As³⁺": {
+                    "name": "Arsenic(III)",
+                    "confirmatory_test": {
+                        "reagent": "(NH₄)₂Sₓ (alkaline polysulfide)",
+                        "observation": "Yellow precipitate dissolves",
+                        "equation": "As₂S₃(s) + 3S²⁻(aq) → 2AsS₃³⁻(aq)",
+                        "explanation": "Soluble thioarsenite complex forms"
+                    }
+                },
+                "As⁵⁺": {
+                    "name": "Arsenic(V)",
+                    "confirmatory_test": {
+                        "reagent": "(NH₄)₂Sₓ (alkaline polysulfide)",
+                        "observation": "Orange precipitate dissolves",
+                        "equation": "As₂S₅(s) + 3S²⁻(aq) → 2AsS₄³⁻(aq)",
+                        "explanation": "Soluble thioarsenate complex forms"
+                    }
+                },
+                "Sb³⁺": {
+                    "name": "Antimony(III)",
+                    "confirmatory_test": {
+                        "reagent": "KI",
+                        "observation": "Orange precipitate",
+                        "equation": "Sb³⁺(aq) + 3I⁻(aq) → SbI₃(s)",
+                        "explanation": "Formation of antimony(III) iodide"
+                    }
+                },
+                "Sb⁵⁺": {
+                    "name": "Antimony(V)",
+                    "confirmatory_test": {
+                        "reagent": "KI",
+                        "observation": "White precipitate",
+                        "equation": "Sb⁵⁺(aq) + 5I⁻(aq) → SbI₅(s)",
+                        "explanation": "Formation of antimony(V) iodide"
+                    }
+                },
+                "Sn²⁺": {
+                    "name": "Tin(II)",
+                    "confirmatory_test": {
+                        "reagent": "NaOH",
+                        "observation": "White precipitates dissolves in excess",
+                        "equation": "Sn²⁺(aq) + 2OH⁻(aq) → Sn(OH)₂(s)\nSn(OH)₂(s) + 2OH⁻(aq) → [Sn(OH)₄]²⁻(aq)",
+                        "explanation": "Amphoteric behavior of tin(II) hydroxide"
+                    }
+                },
+                "Sn⁴⁺": {
+                    "name": "Tin(IV)",
+                    "confirmatory_test": {
+                        "reagent": "Excess NH₄OH",
+                        "observation": "White gelatinous precipitates",
+                        "equation": "Sn⁴⁺(aq) + 4OH⁻(aq) → Sn(OH)₄(s)",
+                        "explanation": "Tin(IV) hydroxide formation"
+                    }
+                }
+            }
+        },
+        "Group III": {
+            "title": "NH₄OH Group (Hydroxide Group)",
+            "description": "Cations forming hydroxide precipitates with NH₄OH in NH₄Cl",
+            "separation_reagent": "NH₄OH + NH₄Cl",
+            "ions": {
+                "Fe²⁺": {
+                    "name": "Iron(II)",
+                    "confirmatory_test": {
+                        "reagent": "K₃[Fe(CN)₆]",
+                        "observation": "Dark blue precipitate",
+                        "equation": "3Fe²⁺(aq) + 2[Fe(CN)₆]³⁻(aq) → Fe₃[Fe(CN)₆]₂(s)",
+                        "explanation": "Turnbull’s blue formation"
+                    }
+                },
+                "Fe³⁺": {
+                    "name": "Iron(III)",
+                    "confirmatory_test": {
+                        "reagent": "KSCN",
+                        "observation": "Blood red solution",
+                        "equation": "Fe³⁺(aq) + SCN⁻(aq) → [Fe(SCN)(H₂O)₅]²⁺(aq)",
+                        "explanation": "Thiocyanate complex formation"
+                    }
+                },
+                "Cr³⁺": {
+                    "name": "Chromium(III)",
+                    "confirmatory_test": {
+                        "reagent": "NaOH + H₂O₂",
+                        "observation": "Green → yellow solution",
+                        "equation": "2Cr(OH)₃(s) + 3H₂O₂(aq) + 4OH⁻(aq) → 2CrO₄²⁻(aq) + 8H₂O(l)",
+                        "explanation": "Oxidation to chromate(VI)"
+                    }
+                },
+                "Al³⁺": {
+                    "name": "Aluminum",
+                    "confirmatory_test": {
+                        "reagent": "Aluminon reagent",
+                        "observation": "Red lake precipitate",
+                        "equation": "Al³⁺ + aluminon → adsorption complex",
+                        "explanation": "Colloidal adsorption complex"
+                    }
+                },
+                "Zn²⁺": {
+                    "name": "Zinc",
+                    "confirmatory_test": {
+                        "reagent": "Na₂S",
+                        "observation": "White precipitate",
+                        "equation": "Zn²⁺(aq) + S²⁻(aq) → ZnS(s)",
+                        "explanation": "Zinc sulfide formation"
+                    }
+                },
+                "Mn²⁺": {
+                    "name": "Manganese(II)",
+                    "confirmatory_test": {
+                        "reagent": "NaBiO₃ + HNO₃",
+                        "observation": "Purple solution",
+                        "equation": "2Mn²⁺(aq) + 5NaBiO₃(s) + 14H⁺(aq) → 2MnO₄⁻(aq) + 5Bi³⁺(aq) + 5Na⁺(aq) + 7H₂O(l)",
+                        "explanation": "Oxidation to permanganate"
+                    }
+                },
+                "Co²⁺": {
+                    "name": "Cobalt(II)",
+                    "confirmatory_test": {
+                        "reagent": "NH₄SCN + acetone",
+                        "observation": "Blue complex",
+                        "equation": "Co²⁺(aq) + 4SCN⁻(aq) → [Co(SCN)₄]²⁻(aq)",
+                        "explanation": "Thiocyanate complex formation"
+                    }
+                },
+                "Ni²⁺": {
+                    "name": "Nickel(II)",
+                    "confirmatory_test": {
+                        "reagent": "Dimethylglyoxime (DMG)",
+                        "observation": "Bright red precipitate",
+                        "equation": "Ni²⁺(aq) + 2DMG(aq) → Ni(DMG)₂(s)",
+                        "explanation": "Nickel dimethylglyoxime complex"
+                    }
+                }
+            }
+        },
+        "Group IV": {
+            "title": "Alkaline Earth Group",
+            "description": "Precipitated as sulfates by (NH₄)₂SO₄ in acetate buffer",
+            "separation_reagent": "(NH₄)₂SO₄ + CH₃COONH₄",
+            "ions": {
+                "Ca²⁺": {
+                    "name": "Calcium",
+                    "confirmatory_test": {
+                        "reagent": "Ammonium oxalate",
+                        "observation": "White precipitate",
+                        "equation": "Ca²⁺(aq) + C₂O₄²⁻(aq) → CaC₂O₄(s)",
+                        "explanation": "Calcium oxalate formation"
+                    }
+                },
+                "Sr²⁺": {
+                    "name": "Strontium",
+                    "confirmatory_test": {
+                        "reagent": "Flame test",
+                        "observation": "Crimson red flame",
+                        "equation": "Sr²⁺ → characteristic emission",
+                        "explanation": "Atomic emission spectrum"
+                    }
+                },
+                "Ba²⁺": {
+                    "name": "Barium",
+                    "confirmatory_test": {
+                        "reagent": "K₂CrO₄",
+                        "observation": "Yellow precipitate",
+                        "equation": "Ba²⁺(aq) + CrO₄²⁻(aq) → BaCrO₄(s)",
+                        "explanation": "Barium chromate formation"
+                    }
+                }
+            }
+        },
+        "Group V": {
+            "title": "Soluble Group",
+            "description": "Identified via specific individual tests",
+            "separation_reagent": "None required",
+            "ions": {
+                "Mg²⁺": {
+                    "name": "Magnesium",
+                    "confirmatory_test": {
+                        "reagent": "Magneson reagent",
+                        "observation": "Blue precipitate",
+                        "equation": "Mg²⁺ + Magneson → adsorption complex",
+                        "explanation": "Adsorption indicator reaction"
+                    }
+                },
+                "Na⁺": {
+                    "name": "Sodium",
+                    "confirmatory_test": {
+                        "reagent": "Flame test",
+                        "observation": "Persistent yellow flame",
+                        "equation": "Na⁺ → characteristic emission",
+                        "explanation": "Atomic emission at 589 nm"
+                    }
+                },
+                "K⁺": {
+                    "name": "Potassium",
+                    "confirmatory_test": {
+                        "reagent": "Sodium hexanitritocobaltate(III)",
+                        "observation": "Yellow precipitate",
+                        "equation": "2K⁺(aq) + Na₃[Co(NO₂)₆](aq) → K₂Na[Co(NO₂)₆](s) + 2Na⁺(aq)",
+                        "explanation": "Complex cobaltinitrite formation"
+                    }
+                },
+                "NH₄⁺": {
+                    "name": "Ammonium",
+                    "confirmatory_test": {
+                        "reagent": "Nessler's reagent",
+                        "observation": "Brown precipitate",
+                        "equation": "2[HgI₄]²⁻(aq) + NH₃(aq) + 3OH⁻(aq) → HgO·Hg(NH₂)I(s) + 7I⁻(aq) + 2H₂O(l)",
+                        "explanation": "Formation of Million's base iodide"
+                    }
+                },
+                "Li⁺": {
+                    "name": "Lithium",
+                    "confirmatory_test": {
+                        "reagent": "Flame test",
+                        "observation": "Crimson red flame",
+                        "equation": "Li⁺ → characteristic emission",
+                        "explanation": "Atomic emission at 670.8 nm"
+                    }
+                },
+                "H⁺": {
+                    "name": "Hydrogen (Proton)",
+                    "confirmatory_test": {
+                        "reagent": "pH paper",
+                        "observation": "Red coloration",
+                        "equation": "H⁺ + Indicator → Color change",
+                        "explanation": "Acid-base indicator response"
+                    }
+                }
+            }
+        }
+    },
+    
+    "anions": {
+        "Group I": {
+            "title": "Dilute H₂SO₄ Group",
+            "description": "Anions reacting with dilute sulfuric acid to produce characteristic reactions",
+            "separation_reagent": "Dilute H₂SO₄",
+            "ions": {
+                "CO₃²⁻": {
+                    "name": "Carbonate",
+                    "confirmatory_test": {
+                        "reagent": "Dilute H₂SO₄ + lime water",
+                        "observation": "Effervescence with gas turning lime water milky",
+                        "equation": "CO₃²⁻(aq) + 2H⁺(aq) → CO₂(g) + H₂O(l)\nCO₂(g) + Ca(OH)₂(aq) → CaCO₃(s) + H₂O(l)",
+                        "explanation": "Carbonate decomposition produces CO₂ gas that forms insoluble calcium carbonate (Ksp = 4.5×10⁻⁹)"
+                    }
+                },
+                "S²⁻": {
+                    "name": "Sulfide",
+                    "confirmatory_test": {
+                        "reagent": "Lead acetate paper",
+                        "observation": "Black precipitate formation",
+                        "equation": "S²⁻(aq) + Pb²⁺(aq) → PbS(s)",
+                        "explanation": "Extremely low solubility allows detection at ppm levels (Ksp = 9.0×10⁻²⁹)"
+                    }
+                },
+                "NO₂⁻": {
+                    "name": "Nitrite",
+                    "confirmatory_test": {
+                        "reagent": "Dilute H₂SO₄",
+                        "observation": "Brown fumes evolution",
+                        "equation": "2NO₂⁻(aq) + 2H⁺(aq) → NO₂(g) + NO(g) + H₂O(l)",
+                        "explanation": "Nitrous acid decomposition produces characteristic brown gas"
+                    }
+                },
+                "CH₃COO⁻": {
+                    "name": "Acetate",
+                    "confirmatory_test": {
+                        "reagent": "Conc. H₂SO₄ + ethanol",
+                        "observation": "Fruity odor of ethyl acetate",
+                        "equation": "CH₃COO⁻(aq) + C₂H₅OH(l) + H⁺(aq) → CH₃COOC₂H₅(g) + H₂O(l)",
+                        "explanation": "Esterification reaction producing volatile ester (pKa = 4.76)"
+                    }
+                }
+            }
+        },
+        "Group II": {
+            "title": "Concentrated H₂SO₄ Group",
+            "description": "Anions requiring concentrated sulfuric acid for characteristic reactions",
+            "separation_reagent": "Concentrated H₂SO₄",
+            "ions": {
+                "Cl⁻": {
+                    "name": "Chloride",
+                    "confirmatory_test": {
+                        "reagent": "AgNO₃ solution",
+                        "observation": "White precipitate soluble in NH₃",
+                        "equation": "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\nAgCl(s) + 2NH₃(aq) → [Ag(NH₃)₂]⁺(aq) + Cl⁻(aq)",
+                        "explanation": "Distinctive solubility behavior in ammonia (Ksp = 1.8×10⁻¹⁰)"
+                    }
+                },
+                "Br⁻": {
+                    "name": "Bromide",
+                    "confirmatory_test": {
+                        "reagent": "AgNO₃ solution",
+                        "observation": "Pale yellow precipitate",
+                        "equation": "Ag⁺(aq) + Br⁻(aq) → AgBr(s)",
+                        "explanation": "Intermediate solubility product (Ksp = 5.0×10⁻¹³)"
+                    }
+                },
+                "I⁻": {
+                    "name": "Iodide",
+                    "confirmatory_test": {
+                        "reagent": "AgNO₃ solution",
+                        "observation": "Bright yellow precipitate",
+                        "equation": "Ag⁺(aq) + I⁻(aq) → AgI(s)",
+                        "explanation": "Most insoluble silver halide (Ksp = 8.5×10⁻¹⁷)"
+                    }
+                },
+                "NO₃⁻": {
+                    "name": "Nitrate",
+                    "confirmatory_test": {
+                        "reagent": "FeSO₄ + Conc. H₂SO₄",
+                        "observation": "Brown ring formation",
+                        "equation": "NO₃⁻(aq) + 3Fe²⁺(aq) + 4H⁺(aq) → NO(g) + 3Fe³⁺(aq) + 2H₂O(l)\nFe²⁺(aq) + NO(g) → [Fe(NO)]²⁺(aq)",
+                        "explanation": "Nitric oxide complexation with Fe²⁺ (E° = +0.96V)"
+                    }
+                }
+            }
+        },
+        "Group III": {
+            "title": "Special Tests Group",
+            "description": "Anions requiring specific confirmatory tests",
+            "separation_reagent": "Various specific reagents",
+            "ions": {
+                "SO₄²⁻": {
+                    "name": "Sulfate",
+                    "confirmatory_test": {
+                        "reagent": "BaCl₂ in acidic medium",
+                        "observation": "White crystalline precipitate",
+                        "equation": "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)",
+                        "explanation": "Kinetically inert precipitate resistant to acid dissolution (Ksp = 1.1×10⁻¹⁰)"
+                    }
+                },
+                "PO₄³⁻": {
+                    "name": "Phosphate",
+                    "confirmatory_test": {
+                        "reagent": "Ammonium molybdate + HNO₃",
+                        "observation": "Yellow crystalline precipitate",
+                        "equation": "PO₄³⁻(aq) + 12MoO₄²⁻(aq) + 3NH₄⁺(aq) + 24H⁺(aq) → (NH₄)₃PO₄·12MoO₃(s) + 12H₂O(l)",
+                        "explanation": "Formation of ammonium phosphomolybdate heteropoly acid"
+                    }
+                },
+                "BO₃³⁻": {
+                    "name": "Borate",
+                    "confirmatory_test": {
+                        "reagent": "Conc. H₂SO₄ + methanol",
+                        "observation": "Green edged flame",
+                        "equation": "BO₃³⁻(aq) + 3CH₃OH(l) + 3H⁺(aq) → B(OCH₃)₃(g) + 3H₂O(l)",
+                        "explanation": "Volatile methyl borate produces characteristic flame color"
+                    }
+                }
+            }
+        }
+    },
+    "metadata": {
+        "group_system": "Traditional 5-Group System",
+        "reference": "Vogel's Textbook of Macro and Semimicro Qualitative Inorganic Analysis",
+        "version": "2.0",
+        "revision_date": "2025-05-14"
+    }
+}

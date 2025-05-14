@@ -1,0 +1,9 @@
+2025-05-14 08:03:15,542 - INFO - Logging system initialized
+2025-05-14 08:03:15,543 - INFO - Program started
+2025-05-14 08:03:15,543 - INFO - Database loaded successfully
+2025-05-14 08:03:31,024 - INFO - Cation analyzer initialized
+2025-05-14 08:03:33,805 - INFO - Starting full cation analysis
+2025-05-14 08:03:33,806 - INFO - Testing Group I - HCl Group (Silver Group)
+2025-05-14 08:03:38,444 - INFO - Detected Pb²\u207a in Group I
+2025-05-14 08:03:38,445 - INFO - Displayed details for Pb²\u207a
+2025-05-14 08:04:00,225 - INFO - Results saved to cation_analysis_2025-05-14_08-04-00.txt

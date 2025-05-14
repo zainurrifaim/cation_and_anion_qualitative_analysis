@@ -42,7 +42,7 @@ CATION_REACTIONS = {
         "reason": "Forms soluble thioarsenite complex"
     },
 
-    # Group III (NH₄OH/NH₄Cl Group)
+    # Group III (NH₄OH/NH₄Cl and H₂S Basic Group)
     "Fe³⁺": {
         "test": "K₄[Fe(CN)₆]",
         "reaction": "4Fe³⁺ + 3[Fe(CN)₆]⁴⁻ → Fe₄[Fe(CN)₆]₃↓ (Prussian blue)",
@@ -58,8 +58,6 @@ CATION_REACTIONS = {
         "reaction": "Cr³⁺ → CrO₄²⁻ → PbCrO₄↓ (yellow)",
         "reason": "Oxidation to chromate followed by precipitation"
     },
-
-    # Group IV (H₂S Basic Group)
     "Zn²⁺": {
         "test": "NaOH solubility",
         "reaction": "Zn²⁺ + 2OH⁻ → Zn(OH)₂↓ → [Zn(OH)₄]²⁻",
@@ -81,7 +79,7 @@ CATION_REACTIONS = {
         "reason": "Tetrahedral thiocyanate complex"
     },
 
-    # Group V ((NH₄)₂CO₃ Group)
+    # Group IV ((NH₄)₂CO₃ Group)
     "Ba²⁺": {
         "test": "Flame test (green)",
         "reaction": "Ba²⁺ → Ba* (excited state)",
@@ -98,7 +96,7 @@ CATION_REACTIONS = {
         "reason": "Emission at 622 nm (orange-red)"
     },
 
-    # Group VI (Soluble Group)
+    # Group V (Soluble Group)
     "NH₄⁺": {
         "test": "NaOH + heat",
         "reaction": "NH₄⁺ + OH⁻ → NH₃↑ + H₂O",
@@ -120,6 +118,7 @@ CATION_REACTIONS = {
         "reason": "Emission at 766/770 nm"
     }
 }
+
 
 # ======================
 # CORE FUNCTIONS
@@ -218,12 +217,13 @@ def test_group_ii():
     return detected
 
 def test_group_iii():
-    """Test for Group III cations (Fe³⁺, Al³⁺, Cr³⁺)"""
+    """Test for Group III cations (Fe³⁺, Al³⁺, Cr³⁺, Zn²⁺, Mn²⁺, Ni²⁺, Co²⁺)"""
     detected = []
-    print("\n=== GROUP III: NH₄OH/NH₄Cl ===")
+    print("\n=== GROUP III: NH₄OH/NH₄Cl and H₂S Basic ===")
     
+    # Part 1: Hydroxide precipitation (Fe³⁺, Al³⁺, Cr³⁺)
     if get_user_input("Did a precipitate form after adding NH₄OH/NH₄Cl? (y/n): ", ['y', 'n']) == 'y':
-        print("\nPerforming confirmatory tests...")
+        print("\nPerforming hydroxide confirmatory tests...")
         
         # Test for Iron
         if get_user_input("Add K₄[Fe(CN)₆]. Blue precipitate? (y/n): ", ['y', 'n']) == 'y':
@@ -232,7 +232,7 @@ def test_group_iii():
             print_reaction_explanation("Fe³⁺")
         
         # Test for Aluminum
-        if get_user_input("Add aluminon + NH₄OH. Red precipitate? (y/n): ", ['y', 'n']) == 'y':
+        if get_user_input("Add aluminon reagent. Red precipitate? (y/n): ", ['y', 'n']) == 'y':
             detected.append("Al³⁺")
             print("-> Al³⁺ confirmed: Red lake precipitate")
             print_reaction_explanation("Al³⁺")
@@ -243,15 +243,9 @@ def test_group_iii():
             print("-> Cr³⁺ confirmed: Yellow PbCrO₄ precipitate")
             print_reaction_explanation("Cr³⁺")
     
-    return detected
-
-def test_group_iv():
-    """Test for Group IV cations (Zn²⁺, Mn²⁺, Ni²⁺, Co²⁺)"""
-    detected = []
-    print("\n=== GROUP IV: H₂S in Basic Medium ===")
-    
+    # Part 2: Sulfide precipitation (Zn²⁺, Mn²⁺, Ni²⁺, Co²⁺)
     if get_user_input("Did a precipitate form after passing H₂S in basic solution? (y/n): ", ['y', 'n']) == 'y':
-        print("\nPerforming confirmatory tests...")
+        print("\nPerforming sulfide confirmatory tests...")
         
         # Test for Zinc
         if get_user_input("Add NaOH. White precipitate soluble in excess? (y/n): ", ['y', 'n']) == 'y':
@@ -279,10 +273,10 @@ def test_group_iv():
     
     return detected
 
-def test_group_v():
-    """Test for Group V cations (Ba²⁺, Sr²⁺, Ca²⁺)"""
+def test_group_iv():
+    """Test for Group IV cations (Ba²⁺, Sr²⁺, Ca²⁺)"""
     detected = []
-    print("\n=== GROUP V: (NH₄)₂CO₃ ===")
+    print("\n=== GROUP IV: (NH₄)₂CO₃ Test ===")
     
     if get_user_input("Did a precipitate form after adding (NH₄)₂CO₃? (y/n): ", ['y', 'n']) == 'y':
         print("\nPerforming flame tests...")
@@ -304,10 +298,10 @@ def test_group_v():
     
     return detected
 
-def test_group_vi():
-    """Test for Group VI cations (NH₄⁺, Mg²⁺, Na⁺, K⁺)"""
+def test_group_v():
+    """Test for Group V cations (NH₄⁺, Mg²⁺, Na⁺, K⁺)"""
     detected = []
-    print("\n=== GROUP VI: Soluble Group ===")
+    print("\n=== GROUP V: Soluble Group ===")
     
     # Ammonium test
     if get_user_input("Add NaOH + heat. Ammonia smell? (y/n): ", ['y', 'n']) == 'y':
@@ -335,6 +329,7 @@ def test_group_vi():
     
     return detected
 
+
 # ======================
 # MAIN PROGRAM
 # ======================
@@ -351,7 +346,6 @@ def main():
     detected_cations.extend(test_group_iii())
     detected_cations.extend(test_group_iv())
     detected_cations.extend(test_group_v())
-    detected_cations.extend(test_group_vi())
     
     # Display final results
     print("\n=== FINAL RESULTS ===")

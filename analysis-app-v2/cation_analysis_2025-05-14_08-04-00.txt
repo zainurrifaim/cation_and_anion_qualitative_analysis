@@ -1,0 +1,10 @@
+Qualitative Analysis Results - CATION
+==================================================
+Detected cations: Pb²⁺
+
+Pb²⁺:
+Test Method: Hot water + K₂CrO₄
+Observation: Yellow precipitate
+Reaction: Pb²⁺(aq) + CrO₄²⁻(aq) → PbCrO₄(s)
+Principle: Selective precipitation due to low solubility (Ksp = 2.8×10⁻¹³)
+

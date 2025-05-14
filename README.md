@@ -1,5 +1,5 @@
 ## 📌 Overview
-A Python-based simulator for systematic qualitative inorganic analysis, replicating traditional wet-lab procedures for cation (Groups I-VI) and anion (Groups I-III) identification.
+A Python-based simulator for systematic qualitative inorganic analysis, implementing a modern database-driven approach for cation (Groups I-V) and anion (Groups I-III) identification.
 
 ## 🏗️ System Architecture
 
@@ -7,43 +7,52 @@ A Python-based simulator for systematic qualitative inorganic analysis, replicat
 ```mermaid
 classDiagram
     class ChemicalAnalyzer {
-        <<Abstract>>
-        +reactions
-        +ion_type
-        +detected_ions
+        +ion_type: str
+        +detected_ions: List[str]
+        +groups: Dict[str, GroupData]
+        +all_reactions: Dict[str, IonData]
         +print_reaction_details()
         +save_results()
         +show_detailed_results()
+        +test_group()
+        +perform_full_analysis()
     }
 
     class CationAnalyzer {
-        +test_group_i()
-        +test_group_ii()
-        +test_group_iii()
-        +test_group_iv()
-        +test_group_v()
-        +test_group_vi()
-        +perform_full_analysis()
+        +group_order: List[str]
     }
 
     class AnionAnalyzer {
-        +test_group_i()
-        +test_group_ii()
-        +test_group_iii()
-        +perform_full_analysis()
+        +group_order: List[str]
     }
 
-    class ReactionData {
+    class GroupData {
         <<Data>>
-        +test
-        +reaction
-        +reason
-        +group
+        +title: str
+        +description: str
+        +separation_reagent: str
+        +ions: Dict[str, IonData]
+    }
+
+    class IonData {
+        <<Data>>
+        +name: str
+        +confirmatory_test: ConfirmatoryTest
+    }
+
+    class ConfirmatoryTest {
+        <<Data>>
+        +reagent: str
+        +observation: str
+        +equation: str
+        +explanation: str
     }
 
     ChemicalAnalyzer <|-- CationAnalyzer
     ChemicalAnalyzer <|-- AnionAnalyzer
-    ChemicalAnalyzer o-- ReactionData
+    ChemicalAnalyzer o-- GroupData
+    GroupData o-- IonData
+    IonData o-- ConfirmatoryTest
 ```
 
 ### Key Components
@@ -57,26 +66,30 @@ classDiagram
 ## 🚀 Quick Start
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/zainurrifaim/cation_and_anion_qualitative_analysis.git
-   cd cation_and_anion_qualitative_analysis
+    git clone https://github.com/zainurrifaim/cation_and_anion_qualitative_analysis.git
+    cd cation_and_anion_qualitative_analysis/analysis-app-v2
    ```
 
 2. **Run the analyzer**:
    ```bash
-   python cation_and_anion_qualitative_analysis.py
+    python analysis_app.py
    ```
 
 3. **Follow the interactive prompts** to perform analyses.
 
 ## 🧪 Example Workflow
 ```text
-=== CATION ANALYSIS: GROUP I ===
-Add dilute HCl to the solution...
-Did a white precipitate form? [y/n]: y
+=== CATION ANALYSIS: GROUP I - HCl Group ===
+Description: Cations forming insoluble chlorides
+Separation Reagent: Dilute HCl
+
+Possible ions: Pb²⁺, Ag⁺, Hg₂²⁺
+Did precipitation occur? [y/n]: y
 
 Testing for Pb²⁺:
-Reaction: Pb²⁺ + CrO₄²⁻ → PbCrO₄↓ (yellow)
-Scientific Principle: Ksp = 2.8×10⁻¹³
+Reagent: Hot water + K₂CrO₄
+Expected Observation: Yellow precipitate
+Did you observe this result? [y/n]: y
 ```
 
 ## 🛠️ Development
@@ -90,12 +103,19 @@ Scientific Principle: Ksp = 2.8×10⁻¹³
 
 ### Extending the System
 **To add new ions**:
-```python
-CATION_REACTIONS["Cu⁺"] = {
-    "test": "NH₄OH dissolution",
-    "reaction": "Cu⁺ + 4NH₃ → [Cu(NH₃)₄]⁺",
-    "reason": "Complex formation (Kf = 1.1×10⁷)",
-    "group": "II"
+```"Group II": {
+    "title": "...",
+    "ions": {
+        "Cu²⁺": {
+            "name": "Copper(II)",
+            "confirmatory_test": {
+                "reagent": "Excess NH₄OH",
+                "observation": "Deep blue solution",
+                "equation": "Cu²⁺ + 4NH₃ → [Cu(NH₃)₄]²⁺",
+                "explanation": "Tetraammine copper(II) complex formation"
+            }
+        }
+    }
 }
 ```
 
