@@ -59,7 +59,7 @@ classDiagram
 | Component           | Description                                |
 |---------------------|--------------------------------------------|
 | `ChemicalAnalyzer`  | Base class with core analysis functionality|
-| `CationAnalyzer`    | Handles all 6 cation group tests           |
+| `CationAnalyzer`    | Handles all 5 cation group tests           |
 | `AnionAnalyzer`     | Manages 3 anion group analyses             |
 | `ReactionData`      | Stores test metadata and chemical equations|
 
